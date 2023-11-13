@@ -1,0 +1,784 @@
+Python fundamentals:
+    PEP 8 style guide 
+    Programming paradigms
+    ├ Imperative
+    │ ├ Procedural
+    │ ├ Structured: Control flow statements (ternary_operator, if, loops, try_catch) & Functions
+    │ ├ Recursive
+    │ └ Object-oriented: Data types and files, Object-oriented programming (OOP):
+    │   ├Classes and objects
+    │   ├Inheritance
+    │   ├Polymorphism
+    │   └Encapsulation
+    ├ Declarative
+    │ ├ Dataflow
+    │ ├ Functional (lambdas, filter, map, reduce)
+    │ ├ Logic
+    │ └ SQL
+    ├ Dynamic
+    ├ Event-driven
+    ├ Metaprogramming: Python metaprogramming:
+    │ ├ Metaclasses
+    │ ├ Descriptors
+    │ └ Mixins
+    └ Parallel computing: Concurrency and parallelism:
+      ├ Multithreading
+      └ Asynchronous programming
+
+    Data types (🔒 immutable, 🔓 mutable)
+        Relevant Datatypes Modules
+            Collections
+            Itertools
+            array: Basic typed arrays.
+            bisect: Binary searching, inserting, and merging sorted sequences.
+            heapq: Implements a priority queue.
+            queue: Implements a queue.
+            weakref: Weak references to objects.
+            dataclass: Decorator for creating data classes.
+            typing: Type hints for Python 3.5 and later. 
+        Numbers
+            🔒bool
+            🔒int 
+            🔒float
+            🔒complex
+        Non-basic Numbers
+            🔒decimal 
+            🔒Rational
+        Unordered Iterables
+            🔓set
+            🔒frozenset
+        Ordered iterators iterables (Chains)
+            🔒str  
+            🔒byte
+            🔓bytearray 
+        Ordered iterables (non-Chains)   
+            🔒tuple
+            🔒namedtuple
+            🔓list
+            🔓dict
+            🔓Defaultdict
+            🔓Counter
+            🔓deque
+        🔒User-defined immutable classes
+        🔓User-defined classes   
+            date
+            stack
+            queue
+            trees
+            hash maps
+            linked lists
+        Data structures and algorithms:
+            Arrays
+            Linked lists
+            Stacks
+            Queues
+            Hash tables
+            Sorting algorithms
+            Searching algorithms
+
+    Design patterns:
+        Singleton
+        Factory
+        Observer
+        Adapter
+        Decorator
+    Testing:
+        Unit testing
+        Integration testing
+        System testing
+    Python performance optimization:
+        C extensions
+        Cython
+        Numba
+    Python security:
+        Code injection attacks
+        Cross-site scripting (XSS) attacks
+        Cross-site request forgery (CSRF) attacks
+    Python packaging and distribution: This topic covers how to package your Python code into a distributable format, such as a wheel file or a source distribution. This is important if you want to share your code with others or publish it to a package repository such as PyPI.
+    Python web development: Python is a popular language for web development, and there are a number of popular Python web frameworks, such as Django and Flask. If you are interested in web development, you may want to consider adding a section on Python web development to your index.
+    Python machine learning: Python is also a popular language for machine learning, and there are a number of popular Python machine learning libraries, such as TensorFlow and scikit-learn. If you are interested in machine learning, you may want to consider adding a section on Python machine learning to your index.
+    Python libraries and frameworks:
+        Debug:
+            Pytest
+            iPython interactive Python interpreter
+        Data Science:
+            NumPy  high-level mathematical functions 
+            Pandas DS
+            Scipy  scientific computing
+            SymPy symbolic mathematics
+            Matplotlib dimensional plotting
+            Seaborn visualization
+            Plotly
+            Scikit-learn  ML(NumPy SciPy)
+            Pipenv working environment
+            TensorFlow DL
+            Apache Spark
+        DS & web dev
+            Keras neural netw
+            NLTK NLP
+            SQLAlchemy
+            Requests
+            Scrapy
+            BeautifulSoup
+            Django
+            Flask
+        Chemistry:
+            Chempy: For molecular modeling and cheminformatics
+            Open Babel: For support for a variety of molecular file formats
+        Sound:
+            PySoundFile: A library for reading and writing audio files in a variety of formats.
+            Librosa: A library for music analysis and processing.
+            MuseNet: A library for generating music using deep learning.
+            Pyo: A library for real-time audio synthesis and processing.
+            Midifile: A library for reading and writing MIDI files.
+        IoT:
+            Paho-MQTT: A client library for the MQTT messaging protocol, which is widely used in IoT applications.
+            Azure IoT SDK for Python: A client library for the Azure IoT Hub service.
+            Google Cloud IoT Core Python Client Library: A client library for the Google Cloud IoT Core service.
+            AWS IoT Core Python SDK: A client library for the AWS IoT Core service.
+            Adafruit CircuitPython: A collection of libraries for working with Adafruit hardware, such as microcontrollers and sensors.
+        
+    Python Modules
+        __future__: Future statement definitions
+        __main__: The environment where top-level code is run. Covers command-line interfaces, import-time behavior, and ``__name__ == '__main__'``.
+        _thread: Low-level threading API.
+        abc: Abstract base classes according to :pep:`3119`.
+        aifc: Deprecated: Read and write audio files in AIFF or AIFC format.
+        argparse: Command-line option and argument parsing library.
+        array: Space efficient arrays of uniformly typed numeric values.
+        ast: Abstract Syntax Tree classes and manipulation.
+        asyncio: Asynchronous I/O.
+        atexit: Register and execute cleanup functions.
+        audioop: Deprecated: Manipulate raw audio data.
+        base64: RFC 4648: Base16, Base32, Base64 Data Encodings; Base85 and Ascii85
+        bdb: Debugger framework.
+        binascii: Tools for converting between binary and various ASCII-encoded binary representations.
+        bisect: Array bisection algorithms for binary searching.
+        builtins: The module that provides the built-in namespace.
+        bz2: Interfaces for bzip2 compression and decompression.
+        calendar: Functions for working with calendars, including some emulation of the Unix cal program.
+        cgi: Deprecated: Helpers for running Python scripts via the Common Gateway Interface.
+        cgitb: Deprecated: Configurable traceback handler for CGI scripts.
+        chunk: Deprecated: Module to read IFF chunks.
+        cmath: Mathematical functions for complex numbers.
+        cmd: Build line-oriented command interpreters.
+        code: Facilities to implement read-eval-print loops.
+        codecs: Encode and decode data and streams.
+        codeop: Compile (possibly incomplete) Python code.
+        collections: Container datatypes
+        collections.abc: Abstract base classes for containers
+        colorsys: Conversion functions between RGB and other color systems.
+        compileall: Tools for byte-compiling all Python source files in a directory tree.
+        concurrent: 
+        concurrent.futures: Execute computations concurrently using threads or processes.
+        configparser: Configuration file parser.
+        contextlib: Utilities for with-statement contexts.
+        contextvars: Context Variables
+        copy: Shallow and deep copy operations.
+        copyreg: Register pickle support functions.
+        cProfile: 
+        crypt (Unix): Deprecated: The crypt() function used to check Unix passwords.
+        csv: Write and read tabular data to and from delimited files.
+        ctypes: A foreign function library for Python.
+        curses (Unix): An interface to the curses library, providing portable terminal handling.
+        curses.ascii: Constants and set-membership functions for ASCII characters.
+        curses.panel: A panel stack extension that adds depth to curses windows.
+        curses.textpad: Emacs-like input editing in a curses window. : 
+        dataclasses: Generate special methods on user-defined classes.
+        datetime: Basic date and time types.
+        dbm: Interfaces to various Unix "database" formats.
+        dbm.dumb: Portable implementation of the simple DBM interface.
+        dbm.gnu (Unix): GNU's reinterpretation of dbm.
+        dbm.ndbm (Unix): The standard "database" interface, based on ndbm.
+        decimal: Implementation of the General Decimal Arithmetic Specification.
+        difflib: Helpers for computing differences between objects.
+        dis: Disassembler for Python bytecode.
+        doctest: Test pieces of code within docstrings.
+        email: Package supporting the parsing, manipulating, and generating email messages.
+        email.charset: Character Sets
+        email.contentmanager: Storing and Retrieving Content from MIME Parts
+        email.encoders: Encoders for email message payloads.
+        email.errors: The exception classes used by the email package.
+        email.generator: Generate flat text email messages from a message structure.
+        email.header: Representing non-ASCII headers
+        email.headerregistry: Automatic Parsing of headers based on the field name
+        email.iterators: Iterate over a message object tree.
+        email.message: The base class representing email messages.
+        email.mime: Build MIME messages.
+        email.parser: Parse flat text email messages to produce a message object structure.
+        email.policy: Controlling the parsing and generating of messages
+        email.utils: Miscellaneous email package utilities.
+        encodings
+        encodings.idna: Internationalized Domain Names implementation
+        encodings.mbcs: Windows ANSI codepage
+        encodings.utf_8_sig: UTF-8 codec with BOM signature: 
+        ensurepip: Bootstrapping the "pip" installer into an existing Python installation or virtual environment.
+        enum: Implementation of an enumeration class.
+        errno: Standard errno system symbols.
+        faulthandler: Dump the Python traceback.
+        fcntl (Unix): The fcntl() and ioctl() system calls.
+        filecmp: Compare files efficiently.
+        fileinput: Loop over standard input or a list of files.
+        fnmatch: Unix shell style filename pattern matching.
+        fractions: Rational numbers.
+        ftplib: FTP protocol client (requires sockets).
+        functools: Higher-order functions and operations on callable objects.: 
+        gc: Interface to the cycle-detecting garbage collector.
+        getopt: Portable parser for command line options; support both short and long option names.
+        getpass: Portable reading of passwords and retrieval of the userid.
+        gettext: Multilingual internationalization services.
+        glob: Unix shell style pathname pattern expansion.
+        graphlib: Functionality to operate with graph-like structures
+        grp (Unix): The group database (getgrnam() and friends).
+        gzip: Interfaces for gzip compression and decompression using file objects.: 
+        hashlib: Secure hash and message digest algorithms.
+        heapq: Heap queue algorithm (a.k.a. priority queue).
+        hmac: Keyed-Hashing for Message Authentication (HMAC) implementation
+        html: Helpers for manipulating HTML.
+        html.entities: Definitions of HTML general entities.
+        html.parser: A simple parser that can handle HTML and XHTM
+        http: HTTP status codes and messages
+        http.client: HTTP and HTTPS protocol client (requires sockets).
+        http.cookiejar: Classes for automatic handling of HTTP cookies.
+        http.cookies: Support for HTTP state management (cookies).
+        http.server: HTTP server and request handlers. : 
+        idlelib: Implementation package for the IDLE shell/editor.
+        imaplib: IMAP4 protocol client (requires sockets).
+        imghdr: Deprecated: Determine the type of image contained in a file or byte stream.
+        importlib: The implementation of the import machinery.
+        importlib.abc: Abstract base classes related to import
+        importlib.machinery: Importers and path hooks
+        importlib.metadata: Accessing package metadata
+        importlib.resources: Package resource reading, opening, and access
+        inspect: Extract information and source code from live objects.
+        io: Core tools for working with streams.
+        ipaddress: IPv4/IPv6 manipulation library.
+        itertools: Functions creating iterators for efficient looping.
+        json: Encode and decode the JSON format.
+        json.tool: A command line to validate and pretty-print JSON.: 
+        keyword: Test whether a string is a keyword in Python.
+        lib2to3: The 2to3 library
+        linecache: Provides random access to individual lines from text files.
+        locale: Internationalization services.
+        logging: Flexible event logging system for applications.
+        logging.config: Configuration of the logging module.
+        logging.handlers: Handlers for the logging module.
+        lzma: A Python wrapper for the liblzma compression library.
+        mailbox: Manipulate mailboxes in various formats
+        mailcap: Deprecated: Mailcap file handling.
+        marshal: Convert Python objects to streams of bytes and back (with different constraints).
+        math: Mathematical functions (sin() etc.).
+        mimetypes: Mapping of filename extensions to MIME types.
+        mmap: Interface to memory-mapped files for Unix and Windows.
+        modulefinder: Find modules used by a script.
+        msilib (Windows): Deprecated: Creation of Microsoft Installer files, and CAB files.
+        msvcrt (Windows): Miscellaneous useful routines from the MS VC++ runtime.
+        multiprocessing: Process-based parallelism.
+        multiprocessing.connection: API for dealing with sockets.
+        multiprocessing.dummy: Dumb wrapper around threading.
+        multiprocessing.managers: Share data between process with shared objects.
+        multiprocessing.pool: Create pools of processes. : 
+        netrc: Loading of .netrc files.
+        nis (Unix): Deprecated: Interface to Sun's NIS (Yellow Pages) library.
+        nntplib: Deprecated: NNTP protocol client (requires sockets).
+        numbers: Numeric abstract base classes (Complex, Real, Integral, etc.).
+        operator: Functions corresponding to the standard operators.
+        optparse: Deprecated: Command-line option parsing library.
+        os: Miscellaneous operating system interfaces.
+        os.path: Operations on pathnames.
+        ossaudiodev (Linux, FreeBSD): Deprecated: Access to OSS-compatible audio devices.
+        pathlib: Object-oriented filesystem paths
+        pdb: The Python debugger for interactive interpreters.
+        pickle: Convert Python objects to streams of bytes and back.
+        pickletools: Contains extensive comments about the pickle protocols and pickle-machine opcodes, as well as some useful functions.
+        pipes (Unix): Deprecated: A Python interface to Unix shell pipelines.
+        pkgutil: Utilities for the import system.
+        platform: Retrieves as much platform identifying data as possible.
+        plistlib: Generate and parse Apple plist files.
+        poplib: POP3 protocol client (requires sockets).
+        posix (Unix): The most common POSIX system calls (normally used via module os).
+        pprint: Data pretty printer.
+        profile: Python source profiler.
+        pstats: Statistics object for use with the profiler.
+        pty (Unix): Pseudo-Terminal Handling for Unix.
+        pwd (Unix): The password database (getpwnam() and friends).
+        py_compile: Generate byte-code files from Python source files.
+        pyclbr: Supports information extraction for a Python module browser.
+        pydoc: Documentation generator and online help system.
+        queue: A synchronized queue class.
+        quopri: Encode and decode files using the MIME quoted-printable encoding.
+        random: Generate pseudo-random numbers with various common distributions.
+        re: Regular expression operations.
+        readline (Unix): GNU readline support for Python.
+        reprlib: Alternate repr() implementation with size limits.
+        resource (Unix): An interface to provide resource usage information on the current process.
+        rlcompleter: Python identifier completion, suitable for the GNU readline library.
+        runpy: Locate and run Python modules without importing them first.: 
+        sched: General purpose event scheduler.
+        secrets: Generate secure random numbers for managing secrets.
+        select: Wait for I/O completion on multiple streams.
+        selectors: High-level I/O multiplexing.
+        shelve: Python object persistence.
+        shlex: Simple lexical analysis for Unix shell-like languages.
+        shutil: High-level file operations, including copying.
+        signal: Set handlers for asynchronous events.
+        site: Module responsible for site-specific configuration.
+        sitecustomize: 
+        smtplib: SMTP protocol client (requires sockets).
+        sndhdr: Deprecated: Determine type of a sound file.
+        socket: Low-level networking interface.
+        socketserver: A framework for network servers.
+        spwd (Unix): Deprecated: The shadow password database (getspnam() and friends).
+        sqlite3: A DB-API 2.0 implementation using SQLite 3.x.
+        ssl: TLS/SSL wrapper for socket objects
+        stat: Utilities for interpreting the results of os.stat(), os.lstat() and os.fstat().
+        statistics: Mathematical statistics functions
+        string: Common string operations.
+        stringprep: String preparation, as per RFC 3453
+        struct: Interpret bytes as packed binary data.
+        subprocess: Subprocess management.
+        sunau: Deprecated: Provide an interface to the Sun AU sound format.
+        symtable: Interface to the compiler's internal symbol tables.
+        sys: Access system-specific parameters and functions.
+        sys.monitoring: Access and control event monitoring
+        sysconfig: Python's configuration information
+        syslog (Unix): An interface to the Unix syslog library routines.
+        tabnanny: Tool for detecting white space related problems in Python source files in a directory tree.
+        tarfile: Read and write tar-format archive files.
+        telnetlib: Deprecated: Telnet client class.
+        tempfile: Generate temporary files and directories.
+        termios (Unix): POSIX style tty control.
+        test: Regression tests package containing the testing suite for Python.
+        test.support: Support for Python's regression test suite.
+        textwrap: Text wrapping and filling
+        threading: Thread-based parallelism.
+        time: Time access and conversions.
+        timeit: Measure the execution time of small code snippets.
+        tkinter: Interface to Tcl/Tk for graphical user interfaces
+        tkinter.colorchooser (Tk): Color choosing dialog
+        tkinter.commondialog (Tk): Tkinter base class for dialogs
+        tkinter.dnd (Tk): Tkinter drag-and-drop interface
+        tkinter.filedialog (Tk): Dialog classes for file selection
+        tkinter.font (Tk): Tkinter font-wrapping class
+        tkinter.messagebox (Tk): Various types of alert dialogs
+        tkinter.scrolledtext (Tk): Text widget with a vertical scroll bar.
+        tkinter.simpledialog (Tk): Simple dialog windows
+        tkinter.tix: Tk Extension Widgets for Tkinter
+        tkinter.ttk: Tk themed widget set
+        token: Constants representing terminal nodes of the parse tree.
+        tokenize: Lexical scanner for Python source code.
+        tomllib: Parse TOML files.
+        trace: Trace or track Python statement execution.
+        traceback: Print or retrieve a stack traceback.
+        tracemalloc: Trace memory allocations.
+        tty (Unix): Utility functions that perform common terminal control operations.
+        turtle: An educational framework for simple graphics applications
+        turtledemo: A viewer for example turtle scripts
+        types: Names for built-in types.
+        typing: Support for type hints (see :pep:`484`).
+        unicodedata: Access the Unicode Database.
+        unittest: Unit testing framework for Python.
+        unittest.mock: Mock object library.
+        urllib: 
+        urllib.error: Exception classes raised by urllib.request.
+        urllib.parse: Parse URLs into or assemble them from components.
+        urllib.request: Extensible library for opening URLs.
+        urllib.response: Response classes used by urllib.
+        urllib.robotparser: Load a robots.txt file and answer questions about fetchability of other URLs.
+        usercustomize: 
+        uu: Deprecated: Encode and decode files in uuencode format.
+        uuid: UUID objects (universally unique identifiers) according to RFC 4122
+        venv: Creation of virtual environments.
+        warnings: Issue warning messages and control their disposition.
+        wave: Provide an interface to the WAV sound format.
+        weakref: Support for weak references and weak dictionaries.
+        webbrowser: Easy-to-use controller for web browsers.
+        winreg (Windows): Routines and objects for manipulating the Windows registry.
+        winsound (Windows): Access to the sound-playing machinery for Windows.
+        wsgiref: WSGI Utilities and Reference Implementation.
+        wsgiref.handlers: WSGI server/gateway base classes.
+        wsgiref.headers: WSGI response header tools.
+        wsgiref.simple_server: A simple WSGI HTTP server.
+        wsgiref.types: WSGI types for static type checking
+        wsgiref.util: WSGI environment utilities.
+        wsgiref.validate: WSGI conformance checker.
+        xdrlib: Deprecated: Encoders and decoders for the External Data Representation (XDR).
+        xml: Package containing XML processing modules
+        xml.dom: Document Object Model API for Python.
+        xml.dom.minidom: Minimal Document Object Model (DOM) implementation.
+        xml.dom.pulldom: Support for building partial DOM trees from SAX events.
+        xml.etree.ElementInclude: 
+        xml.etree.ElementTree: Implementation of the ElementTree API.
+        xml.parsers.expat: An interface to the Expat non-validating XML parser.
+        xml.parsers.expat.errors: 
+        xml.parsers.expat.model: 
+        xml.sax: Package containing SAX2 base classes and convenience functions.
+        xml.sax.handler: Base classes for SAX event handlers.
+        xml.sax.saxutils: Convenience functions and classes for use with SAX.
+        xml.sax.xmlreader: Interface which SAX-compliant XML parsers must implement.
+        xmlrpc: 
+        xmlrpc.client: XML-RPC client access.
+        xmlrpc.server: Basic XML-RPC server implementations.
+        zipapp: Manage executable Python zip archives
+        zipfile: Read and write ZIP-format archive files.
+        zipimport: Support for importing Python modules from ZIP archives.
+        zlib: Low-level interface to compression and decompression routines compatible with gzip.
+        zoneinfo: IANA time zone support
+        
+        
+        
+PEP 8 STYLE GUIDE
+    https://peps.python.org/pep-0008/
+
+    👉Use autopep8
+
+    Maximum Line Length of 79 characters avoiding a backslash for line continuation.
+    #______________________________________________________________________________
+    #_______________________________________________________________________
+        72 characters For flowing long blocks of text with fewer structural restrictions (docstrings or comments)
+
+    Lines Break Before Binary Operators
+    # easy to match operators with operands
+    income = (gross_wages
+              + taxable_interest
+              + (dividends - qualified_dividends)
+              - ira_deduction
+              - student_loan_interest)
+
+    Blank Lines
+    Surround top-level function and class definitions with two blank lines.
+    Method definitions inside a class are surrounded by a single blank line.
+
+    Compound statements (multiple statements on the same line) are generally discouraged:
+    # Correct:
+    if foo == 'blah':
+        do_blah_thing()
+    do_one()
+    do_two()
+    do_three()
+
+    Indentation______________________________________________________________
+        Use 4 spaces per indentation level No tabs!!
+
+    # An extra level of indentation distinguishes arguments.
+    def long_function_name(
+            var_one, var_two, var_three,
+            var_four):
+        print(var_one)
+
+    # Hanging indents should add a level.
+    foo = long_function_name(
+        var_one, var_two,
+        var_three, var_four)
+
+    # Add some extra indentation on the conditional continuation line.
+    if (this_is_one_thing
+            and that_is_another_thing):
+        do_something()
+
+    closing_______________________________________________________________________
+    The closing brace/bracket/parenthesis on multiline constructs may either line up under the first non-whitespace character of the last line of list, as in:
+
+    my_list = [
+        1, 2, 3,
+        4, 5, 6,
+        ]
+    result = some_function_that_takes_arguments(
+        'a', 'b', 'c',
+        'd', 'e', 'f',
+        )
+
+    Source File Encoding______________________________________________________________
+    Use non-ASCII characters sparingly, preferably only to denote places and human names.
+    All identifiers in the Python standard library MUST use ASCII-only identifiers, and SHOULD use English words wherever feasible.
+
+    Imports_________________________________________________________________________
+    Wildcard imports (from <module> import *) should be avoided
+
+    # Correct:
+    import os
+    import sys
+
+    # Wrong:
+    import sys, os
+
+    # Correct:
+    from subprocess import Popen, PIPE
+
+    You should put a blank line between each group of imports.
+    Standard library imports.
+    Related third party imports.
+    Local application/library specific imports.
+
+    Importing a class from a class-containing module
+    from myclass import MyClass
+    from foo.bar.yourclass import YourClass
+
+
+    Module Level __Dunder Names__ ______________________________________
+
+    """This is the example module.
+
+    This module does stuff.
+    """
+
+    from __future__ import barry_as_FLUFL
+
+    __all__ = ['a', 'b', 'c']
+    __version__ = '0.1'
+    __author__ = 'Cardinal Biggles'
+
+    import os
+    import sys
+
+
+
+    String Quotes___________________________________________
+    Go with "double strings quotes" and use 'simple ones' when necessary
+    """docstrings"""
+
+    Whitespaces to avoid in Expressions and Statements_____________________________
+    # Immediately inside parentheses, brackets or braces:
+    spam(ham[1], {eggs: 2})
+
+    # Between a trailing comma and a following close parenthesis: 
+    foo = (0,)
+
+    # Immediately before a comma, semicolon, a not slicing colon or a finction annotation arrow:
+    if x == 4: print(x, y); x, y = y, x
+    def munge(input: AnyStr): ...
+    def munge() -> PosInt: ...
+
+    # Correct:
+    ham[1:9], ham[1:9:3], ham[:9:3], ham[1::3], ham[1:9:]
+    ham[lower:upper], ham[lower:upper:], ham[lower::step]
+    ham[lower+offset : upper+offset]
+    ham[: upper_fn(x) : step_fn(x)], ham[:: step_fn(x)]
+    ham[lower + offset : upper + offset]
+
+    # Immediately before the open args/indexing/slicing parenthesis
+    spam(1)
+    dct['key'] = lst[index]
+
+    # More than one space around an assignment (or other) operator to align it with another:
+    x = 1
+    y = 2
+    long_variable = 3
+
+    # Wrong:
+    x             = 1
+    y             = 2
+    long_variable = 3
+
+    # Don’t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter unless an argument annotation combines with a default value:
+    def complex(real, imag=0.0):
+        return magic(r=real, i=imag)
+
+    def munge(sep: AnyStr = None): ...
+    def munge(input: AnyStr, sep: AnyStr = None, limit=1000): ...
+
+
+    # Avoid trailing whitespace anywhere
+    # Always surround these binary operators with a single space on either side: 
+        assignments (=, +=, -=, *=, /=, %=), 
+        comparisons (==, <, >, !=, <=, >=, in, not in, is, is not), 
+        Booleans (and, or, not).
+
+    # Never use more than one space, and always have the same amount of whitespace on both sides of a binary operator:
+    i = i + 1
+    submitted += 1
+    x = x*2 - 1
+    hypot2 = x*x + y*y
+    c = (a+b) * (a-b)
+
+
+    Trailing Commas____________________________
+    # For single element tuples (with redundant paretheses)
+    FILES = ('setup.cfg',)
+
+    # Each value on a line by itself adds a trailing comma
+    FILES = [
+        'setup.cfg',
+        'tox.ini',
+        ]
+    initialize(FILES,
+               error=True,
+               )
+
+    Comments_______________________________________________
+
+    use them sparingly, specially inline comments.
+    Comments MUST be up-to-date and NOT contradict the code
+    Comments should be complete sentences. 
+    The first word should be capitalized, unless it is an identifier starting by a lower case letter
+    Block comments generally consist of one or more paragraphs built out of complete sentences, with each sentence ending in a period.
+
+    You should use one or two spaces after a sentence-ending period in multi-sentence comments, except after the final sentence. !!!
+
+          #########
+          # 
+          # Block Comment
+          #
+          ########
+          Some Code  # Inline Comment{ 2 sp + # + sp 
+
+
+    Documentation Strings_______________________________________
+    Write docstrings for all public modules, functions, classes, and methods. Docstrings are not necessary for non-public methods, but you should have a comment that describes what the method does. This comment should appear after the def line.
+    The """ that ends a multiline docstring should be on a line by itself.
+
+    """Return a foobang
+
+    Optional plotz says to frobnicate the bizbaz first.
+    """
+
+    Naming Conventions__=================================================================
+    Prioritize internal consistency
+    Names that are visible to the user as public parts of the API should follow conventions that reflect usage rather than implementation.
+
+    _single_leading_underscore: weak “internal use” indicator. E.g. from M import * does not import objects whose names start with an underscore.
+    single_trailing_underscore_: used by convention to avoid conflicts with Python keyword.
+    __double_leading_underscore: when naming a class attribute, invokes name mangling (inside class FooBar, __boo becomes _FooBar__boo; see below).
+    __double_leading_and_trailing_underscore__: “magic” objects or attributes that live in user-controlled namespaces. E.g. __init__, __import__ or __file__. Never invent such names; only use them as documented.
+
+    Avoid these names: 'I', 'O', 'l' and use 'L' instead if necessary
+
+
+    Modules should have short, all-lowercase snake_case names. 
+    Python packages should also have short, all-lowercase names, without underscores.
+    C/C++ extension modules accompained by a Python module have a leading underscore.
+
+    Exceptions, ClassNames and TypeVariables in PascalCase
+    LowerThanZeroError
+    from typing import TypeVar
+
+    VT_co = TypeVar('VT_co', covariant=True)
+    KT_contra = TypeVar('KT_contra', contravariant=True)
+
+    function and variable_names go in snake_case (camelCase in threading.py)
+
+    Function and Method Arguments
+        Always use self for the first argument to instance methods.
+        Always use cls for the first argument to class methods.
+
+
+    method_names and instance_variables in snake_case
+    _non_public_methods _non_public_instance_variables
+    __pythons_name_mangling_rules
+
+    CONSTANTS_ALL_IN_CAPS
+
+    Avoid using properties for computationally expensive operations; the attribute notation makes the caller believe that access is (relatively) cheap.
+
+    If your class is intended to be subclassed, and you have attributes that you do not want subclasses to use, consider naming them with double leading underscores and no trailing underscores. This invokes Python’s name mangling algorithm, where the name of the class is mangled into the attribute name. This helps avoid attribute name collisions should subclasses inadvertently contain attributes with the same name.
+
+
+    To better support introspection, modules should explicitly declare the names in their public API using the __all__ attribute. Setting __all__ to an empty list indicates that the module has no public API.
+
+
+
+
+
+    Programming Recommendations________________________________________________________
+
+    Comparisons to singletons like None should always be done with is or is not, never the equality operators.
+
+
+    # Correct:
+    if foo is not None:
+    # Wrong:
+    if not foo is None:
+
+
+
+    When implementing ordering operations with rich comparisons, it is best to implement all six operations (__eq__, __ne__, __lt__, __le__, __gt__, __ge__) rather than relying on other code to only exercise a particular comparison.
+
+    To minimize the effort involved, the functools.total_ordering() decorator provides a tool to generate missing comparison methods.
+
+
+    !!!!!!!!!!!!!!!!
+    # Correct:
+    def f(x): return 2*x
+    # Wrong:
+    f = lambda x: 2*x
+
+
+    # Correct:
+    try:
+        value = collection[key]
+    except KeyError:
+        return key_not_found(key)
+    else:
+        return handle_value(value)
+    # Wrong:
+    try:
+        # Too broad!
+        return handle_value(collection[key])
+    except KeyError:
+        # Will also catch KeyError raised by handle_value()
+        return key_not_found(key)
+
+
+    # Correct:
+    with conn.begin_transaction():
+        do_stuff_in_transaction(conn)
+    # Wrong:
+    with conn:
+        do_stuff_in_transaction(conn)
+
+
+    # Be consistent in return statements:
+
+    def foo(x):
+        if x >= 0:
+            return math.sqrt(x)
+        else:
+            return None
+
+    def bar(x):
+        if x < 0:
+            return None
+        return math.sqrt(x)
+
+
+    Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes.
+    # Correct:
+    if foo.startswith('bar'):
+    # Wrong:
+    if foo[:3] == 'bar':
+
+
+
+    # Correct:
+    if isinstance(obj, int):
+    # Wrong:
+    if type(obj) is type(1):
+
+
+    # Correct:
+    if not seq:
+    if seq:
+    # Wrong:
+    if len(seq):
+    if not len(seq):
+
+
+
+    # Correct:
+    if my_bool:
+    # Wrong:
+    if my_bool == True:
+
+
+
+    # Wrong:
+    def foo():
+        try:
+            1 / 0
+        finally:
+            return 42
+
+
+
+PROGRAMMING PARADIGMS
+    
