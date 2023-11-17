@@ -1,0 +1,93 @@
+Python fundamentals:
+  📦Python: 📄 modules, 📚 packages, 📚 libraries and 📚 frameworks
+  😎PEP 8 style guide 
+  📝Programming paradigms
+    ├ Imperative
+    │ ├ Sequential
+    │ ├ Procedural: Functions; *args and **kwargs, Decorators
+    │ ├ Structured: Control flow statements (ternary_operator, if, loops, try_catch) 
+    │ ├ Recursive
+    │ └ Object-oriented: Data types and files, Object-oriented programming (OOP):
+    │   ├Classes and objects
+    │   ├Inheritance
+    │   ├Polymorphism
+    │   └Encapsulation
+    ├ Declarative
+    │ ├ Dataflow
+    │ ├ Functional (lambdas, filter, map, reduce)
+    │ ├ Logic
+    │ └ SQL
+    ├ Dynamic
+    ├ Event-driven
+    ├ Metaprogramming: Python metaprogramming:
+    │ ├ Metaclasses
+    │ ├ Descriptors
+    │ └ Mixins
+    └ Parallel computing: Concurrency and parallelism:
+      ├ Multithreading
+      └ Asynchronous programming: Promises
+
+  📊Data types(
+        🔒immutable/🔓mutable, 
+        📍iterator/🗺️iterable, 
+        🔢ordered-zip-/𓃌Unordered, 
+        single-valued/multivalued,
+        )
+    Relevant Datatypes Modules
+        Collections
+        Itertools
+        array: Basic typed arrays.
+        bisect: Binary searching, inserting, and merging sorted sequences.
+        heapq: Implements a priority queue.
+        queue: Implements a queue.
+        weakref: Weak references to objects.
+        dataclass: Decorator for creating data classes.
+        typing: Type hints for Python 3.5 and later. 
+    Objects
+    None
+        NoneType
+    Numbers
+        🔒bool
+        🔒int 
+        🔒float
+        🔒complex
+    Non-basic Numbers
+        🔒decimal 
+        🔒Rational
+    Unordered Iterables
+        🔓set
+        🔒frozenset
+    Ordered iterators iterables (Chains)
+        🔒str  
+        🔒byte
+        🔓bytearray 
+    Ordered iterables (non-Chains)   
+        🔒tuple
+        🔒Enum
+        🔓list
+        🔒range
+        🔒namedtuple
+        🔓dict
+        🔓Defaultdict
+        🔓OrderedDict
+        🔓Counter
+        🔓deque
+        memoryview
+    GENERATORS
+    LAMBDAS
+    🔒User-defined immutable classes
+    🔓User-defined classes   
+        date
+        stack
+        queue
+        trees
+        hash maps
+        linked lists
+    Data structures and algorithms:
+        Arrays
+        Linked lists
+        Stacks
+        Queues
+        Hash tables
+        Sorting algorithms
+        Searching algorithms

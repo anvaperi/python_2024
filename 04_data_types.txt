@@ -1,0 +1,268 @@
+⚫Relevant Datatypes Modules
+➤Collections
+➤Itertools
+➤array: Basic typed arrays.
+➤bisect: Binary searching, inserting, and merging sorted sequences.
+➤heapq: Implements a priority queue.
+➤queue: Implements a queue.
+➤weakref: Weak references to objects.
+➤dataclass: Decorator for creating data classes.
+➤typing: Type hints for Python 3.5 and later. 
+⚫Data types Categories
+➤🔒immutable/🔓mutable    
+new_var :🔓 = new_value
+allias = new_var 
+# ______________________________________    
+def add_to(num, target=[]):
+    target.append(num)
+    return target
+
+add_to(1)
+# Output: [1]
+
+add_to(2)
+# Output: [1, 2]
+
+add_to(3)
+# Output: [1, 2, 3]    
+# ______________________________________
+def add_to(element, target=None):
+    if target is None:
+        target = []
+    target.append(element)
+    return target
+    
+add_to(1)
+# Output: [1]
+
+add_to(2)
+# Output: [2]
+
+add_to(3)
+# Output: [3]
+➤📍iterator/🗺️iterable
+An iterable is any object in Python which has an __iter__ or a __getitem__ method defined which returns an iterator or can take indexes (You can read more about them here). In short an iterable is any object which can provide us with an iterator.
+An iterator is any object in Python which has a next (Python2) or __next__ method defined to loop over something
+➤🔢ordered-zip-/𓃌Unordered 
+my_list = ['apple', 'banana', 'grapes', 'pear']
+first_index = 1
+counter_list = list(enumerate(my_list, first_index))
+print(counter_list)
+# Output: [(1, 'apple'), (2, 'banana'), (3, 'grapes'), (4, 'pear')]
+
+◆ZIP 
+week_list= [
+    ("☉︎", "Sunday", "Sun"),
+    ("☽︎", "Monday", "Moon"),
+    ("♂", "Tuesday", "Mars"),
+    ("☿", "Wednesday", "Mercury"),
+    ("♃", "Thursday", "Jupiter"),
+    ("♀", "Friday", "Venus"),
+    ("♄", "Saturday", "Saturn"),
+    ("♁", "-", "Earth"),
+    ("♅", "-", "Uranus"),
+    ("♆", "-", "Neptune"),
+    ]
+symbols, week_day_names, astrological_bodies = zip(*week_list)
+print(f"symbols: {symbols}\nweek_days: {week_day_names} \nbodies: {astrological_bodies}")
+
+# symbols: ('☉︎', '☽︎', '♂', '☿', '♃', '♀', '♄', '♁', '♅', '♆')
+# week_days: ('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', '-', '-', '-')
+# bodies: ('Sun', 'Moon', 'Mars', 'Mercury', 'Jupiter', 'Venus', 'Saturn', 'Earth', 'Uranus', 'Neptune')
+➤single-valued/multivalued
+# list comprehensions
+[out for out in input_list if condition(out)]
+# dictionary comprehensions
+{ : for i, v in enumerate(range( }
+
+set comprehensions
+
+generator comprehensions
+⚫Objects
+my_list = [1, 2, 3]
+dir(my_list)
+# Output: ['__add__', '__class__', '__contains__', '__delattr__', '__delitem__',
+# '__delslice__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__',
+# '__getitem__', '__getslice__', '__gt__', '__hash__', '__iadd__', '__imul__',
+# '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__',
+# '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__',
+# '__setattr__', '__setitem__', '__setslice__', '__sizeof__', '__str__',
+# '__subclasshook__', 'append', 'count', 'extend', 'index', 'insert', 'pop',
+# 'remove', 'reverse', 'sort']    
+
+print(type(my_object), id(my_object))
+
+import inspect
+print(inspect.getmembers(str))
+# Output: [('__add__', <slot wrapper '__add__' of ... ...
+⚫None
+➤NoneType
+⚫Numbers
+➤🔒bool
+➤🔒int 
+➤🔒float
+➤🔒complex
+⚫Non-basic Numbers
+➤🔒decimal 
+➤🔒Rational
+⚫Unordered Iterables
+➤🔓set
+my_set = {'red', 'blue', 'green'}
+my_set = set(my_list)
+set1.intersection(set2)
+set1.difference(set2)
+➤🔒frozenset
+⚫Ordered iterators iterables (Chains)
+➤🔒str  
+➤🔒byte
+➤🔓bytearray 
+⚫Ordered iterables (non-Chains)   
+➤🔒tuple
+➤🔒Enum
+from enum import Enum
+
+class TetravalentLogic(Enum):
+    MISSING = 0
+    NOT_APPLICABLE = 1
+    FALSE = 2        
+    TRUE = 3
+
+a_value = TetravalentLogic.NOT_APPLICABLE 
+b_value = TetravalentLogic['MISSING']
+c_value = TetravalentLogic(2)
+➤🔓list
+➤🔒range
+➤🔒namedtuple
+from collections import namedtuple
+def profile():
+    Person = namedtuple('Person', 'name age')
+    return Person(name="Danny", age=31)
+
+# Use as namedtuple
+p = profile()
+print(p, type(p))
+# Person(name='Danny', age=31) <class '__main__.Person'>
+print(p.name)
+# Danny
+
+# ______________________________________
+
+Animal = namedtuple('Animal', 'name age type')
+perry = Animal(name="Perry", age=31, type="cat")
+print(perry._asdict())
+# Output: OrderedDict([('name', 'Perry'), ('age', 31), ...
+➤🔓dict
+➤🔓Defaultdict
+from collections import defaultdict 
+d = defaultdict(lambda: "Missing")
+d["a"] = 1
+print(d["a"], d["b"])  # 1 Missing
+➤🔓OrderedDict
+Problem:
+colours =  {"Red" : 198, "Green" : 170, "Blue" : 160}
+for key, value in colours.items():
+    print(key, value)
+# Output:
+#   Green 170
+#   Blue 160
+#   Red 198
+# Entries are retrieved in an unpredictable order
+
+Solution:
+from collections import OrderedDict
+
+colours = OrderedDict([("Red", 198), ("Green", 170), ("Blue", 160)])
+for key, value in colours.items():
+    print(key, value)
+# Output:
+#   Red 198
+#   Green 170
+#   Blue 160
+# Insertion order is preserved
+➤🔓Counter
+from collections import Counter
+print(Counter([1, 2, 3, 2, 4, 5, 4, 4]))
+# Counter({4: 3, 2: 2, 1: 1, 3: 1, 5: 1})
+➤🔓deque
+from collections import deque
+d = deque(range(5))
+print(len(d))
+# Output: 5
+
+d.popleft()
+# Output: 0
+
+d.pop()
+# Output: 4
+
+print(d)
+# Output: deque([1, 2, 3])
+
+# ______________________________________
+
+d = deque([0, 1, 2, 3, 5], maxlen=5)
+print(d)
+# Output: deque([0, 1, 2, 3, 5], maxlen=5)
+
+d.extend([6])
+print(d)
+#Output: deque([1, 2, 3, 5, 6], maxlen=5)
+
+# ______________________________________
+
+d = deque([1,2,3,4,5])
+d.extendleft([0])
+d.extend([6,7,8])
+print(d)
+# Output: deque([0, 1, 2, 3, 4, 5, 6, 7, 8])
+➤memoryview
+⚫GENERATORS
+def generator_function():
+    for i in range(10):
+        yield i
+
+for item in generator_function():
+    print(item)
+# ______________________________________
+def fibon(n):
+a = b = 1
+for i in range(n):
+    yield a
+    a, b = b, a + b
+# ______________________________________
+next(my_iterator)
+⚫LAMBDAS
+⚫🔒User-defined immutable classes
+⚫🔓User-defined classes   
+class MyClass(object):
+    __slots__ = ['name', 'identifier']
+    def __init__(self, name, identifier):
+        self.name = name
+        self.identifier = identifier
+        self.set_up()
+    # ...
+➤date
+➤stack
+➤queue
+➤trees
+➤hash maps
+➤linked lists
+⚫Data structures and algorithms:
+➤Arrays
+➤Linked lists
+➤Stacks
+➤Queues
+➤Hash tables
+➤Sorting algorithms
+➤Searching algorithms
+
+
+
+
+
+
+
+
+
+
+

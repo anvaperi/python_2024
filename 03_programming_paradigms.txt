@@ -1,0 +1,125 @@
+⚫Imperative Paradigm 
+➤SEQUENTIAL   
+""" This is a comment
+written in
+more than just one line.
+"""
+
+print("Hello, World!")
+
+x = 5.
+type(x)
+
+x, y, z = 1, 2, 3
+u = v = 0    
+# ______________________________________    
+import pdb
+
+pdb.set_trace()
+print(make_bread())
+
+"""Debuger commands:
+    c: continue execution
+    w: shows the context of the current line it is executing.
+    a: print the argument list of the current function
+    s: Execute the current line and stop at the first possible occasion.
+    n: Continue execution until the next line in the current function is reached or it returns.
+"""
+➤PROCEDURAL   
+◆FUNCTIONS
+def myfunc():
+    global x
+    x = "fantastic"
+    return
+
+◆*ARGS AND **KWARGS        
+def test_var_args(f_arg, *argv):
+    print("first normal arg:", f_arg)
+    for arg in argv:
+        print("another arg through *argv:", arg)
+
+test_var_args('yasoob', 'python', 'eggs', 'test')
+
+def greet_me(**kwargs):
+    for key, value in kwargs.items():
+        print("{0} = {1}".format(key, value))
+
+>>> greet_me(name="yasoob")
+name = yasoob
+
+◆DECORATORS
+import math
+
+def log_negative(func):
+  """A decorator that allows the `math.log()` function to work for negative numbers."""
+
+  def wrapper(x):
+    if x < 0:
+      return math.log(abs(x)) + math.pi * 1j
+    else:
+      return func(x)
+
+  return wrapper
+
+@log_negative
+def log(x):
+  """The `math.log()` function with support for negative numbers."""
+  return math.log(x)
+
+# Example usage:
+
+print(log(-2)) # (0.6931471805599453+3.141592653589793j)  
+
+➤STRUCTURED: Control flow statements
+◆ternary_operator
+(if_test_is_false, if_test_is_true)[test]   # Not recommended
+
+value_if_true if condition else value_if_false
+
+>>> True or "Some"
+True
+>>>
+>>> False or "Some"
+'Some'
+◆if
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")
+◆loops
+◆try_catch
+
+
+➤Recursive
+➤Object-oriented: Data types and files, Object-oriented programming (OOP):
+◆Classes and objects
+◆Inheritance
+◆Polymorphism
+◆Encapsulation
+⚫Declarative
+➤Dataflow
+➤Functional (lambdas, filter, map, reduce)
+◆map(function_to_apply, list_of_inputs)
+list(map(lambda x: x**2, [1, 2, 3, 4, 5]))
+[list(map(lambda x: x(i), [lambda t: t*t, lambda t: t+t])) for i in range(5)]
+
+list(filter(lambda x: x < 0, [-3, 5, -6, 4, 0]))
+◆Reduce    
+from functools import reduce
+product = reduce((lambda x, y: x * y), [1, 2, 3, 4])
+    
+➤Logic
+➤SQL
+⚫Dynamic
+⚫Event-driven
+⚫Metaprogramming: Python metaprogramming:
+➤Metaclasses
+➤Descriptors
+➤Mixins
+⚫Parallel computing: Concurrency and parallelism:
+➤Multithreading
+➤Asynchronous programming

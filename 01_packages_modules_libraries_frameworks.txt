@@ -1,0 +1,352 @@
+◆Design patterns: (Singleton, Factory, Observer, Adapter, Decorator)
+◆Testing: (Unit testing, Integration testing, System testing)
+◆Python performance optimization: (C extensions, Cython, Numba)
+◆Python security:( Code injection attacks, Cross-site scripting (XSS) attacks, Cross-site request forgery (CSRF) attacks)
+◆Python packaging and distribution: Code packaging/sharing/publishing to a wheel file, a source distribution or a package repository such as PyPI.
+⚫🏚️ Deprecated:
+📄 aifc: Read and write audio files in AIFF or AIFC format.
+📄 audioop: Manipulate raw audio data.
+📄 cgi: Helpers for running Python scripts via the Common Gateway Interface.
+📄 cgitb: Configurable traceback handler for CGI scripts.
+📄 chunk: Module to read IFF chunks.
+📄 crypt (Unix): The crypt() function used to check Unix passwords.
+📄 imghdr: Determine the type of image contained in a file or byte stream.
+📄 nis (Unix): Interface to Sun's NIS (Yellow Pages) library.
+📄 nntplib: NNTP protocol client (requires sockets).
+📄 mailcap: Mailcap file handling.
+📄 msilib (Windows): Creation of Microsoft Installer files, and CAB files.
+📄 optparse: Command-line option parsing library.
+📄 ossaudiodev (Linux, FreeBSD): Access to OSS-compatible audio devices.
+📄 pipes (Unix): A Python interface to Unix shell pipelines.
+📄 sunau: Provide an interface to the Sun AU sound format.
+📄 telnetlib: Telnet client class.
+📄 uu: Encode and decode files in uuencode format.
+📄 xdrlib: Encoders and decoders for the External Data Representation (XDR).
+⚫Unix:
+📄 curses (Unix): An interface to the curses library, providing portable terminal handling.
+📄 dbm: Interfaces to various Unix "database" formats.
+📄 dbm.gnu (Unix): GNU's reinterpretation of dbm.
+📄 dbm.ndbm (Unix): The standard "database" interface, based on ndbm.
+📄 fcntl (Unix): The fcntl() and ioctl() system calls.
+📄 fnmatch: Unix shell style filename pattern matching.
+📄 glob: Unix shell style pathname pattern expansion.
+📄 grp (Unix): The group database (getgrnam() and friends).
+📄 posix (Unix): The most common POSIX system calls (normally used via module os).
+📄 pty (Unix): Pseudo-Terminal Handling for Unix.
+📄 pwd (Unix): The password database (getpwnam() and friends).
+📄 resource (Unix): An interface to provide resource usage information on the current process.
+📄 readline (Unix): GNU readline support for Python.
+📄 shlex: Simple lexical analysis for Unix shell-like languages.
+📄 spwd (Unix): The shadow password database (getspnam() and friends).
+📄 syslog (Unix): An interface to the Unix syslog library routines.
+📄 termios (Unix): POSIX style tty control.
+📄 tty (Unix): Utility functions that perform common terminal control operations.
+📄 dbm.dumb: Portable implementation of the simple DBM interface.
+📄 dbm.dumb: Portable implementation of the simple DBM interface.
+⚫Windows:      
+📄 encodings.mbcs: Windows ANSI codepage    
+📄 curses.panel: A panel stack extension that adds depth to curses windows.  
+📄 mmap: Interface to memory-mapped files for Unix and Windows.
+📄 msvcrt (Windows): Miscellaneous useful routines from the MS VC++ runtime.  
+📄 winreg (Windows): Routines and objects for manipulating the Windows registry.
+📄 winsound (Windows): Access to the sound-playing machinery for Windows.
+⚫Tkinter:
+📄 tkinter: Interface to Tcl/Tk for graphical user interfaces
+📄 tkinter.colorchooser (Tk): Color choosing dialog
+📄 tkinter.commondialog (Tk): Tkinter base class for dialogs
+📄 tkinter.dnd (Tk): Tkinter drag-and-drop interface
+📄 tkinter.filedialog (Tk): Dialog classes for file selection
+📄 tkinter.font (Tk): Tkinter font-wrapping class
+📄 tkinter.messagebox (Tk): Various types of alert dialogs
+📄 tkinter.scrolledtext (Tk): Text widget with a vertical scroll bar.
+📄 tkinter.simpledialog (Tk): Simple dialog windows
+📄 tkinter.tix: Tk Extension Widgets for Tkinter
+📄 tkinter.ttk: Tk themed widget set
+⚫Web:http
+➤📚Django 
+➤📚Flask 
+➤📚Requests
+➤📚Scrapy
+➤📚BeautifulSoup
+📄 webbrowser: Easy-to-use controller for web browsers.
+📄 email: Package supporting the parsing, manipulating, and generating email messages.
+📄 email.charset: Character Sets
+📄 email.contentmanager: Storing and Retrieving Content from MIME Parts
+📄 email.encoders: Encoders for email message payloads.
+📄 email.errors: The exception classes used by the email package.
+📄 email.generator: Generate flat text email messages from a message structure.
+📄 email.header: Representing non-ASCII headers
+📄 email.headerregistry: Automatic Parsing of headers based on the field name
+📄 email.iterators: Iterate over a message object tree.
+📄 email.message: The base class representing email messages.
+📄 email.mime: Build MIME messages.
+📄 email.parser: Parse flat text email messages to produce a message object structure.
+📄 email.policy: Controlling the parsing and generating of messages
+📄 email.utils: Miscellaneous email package utilities.
+📄 encodings
+📄 encodings.idna: Internationalized Domain Names implementation
+📄 encodings.utf_8_sig: UTF-8 codec with BOM signature:
+📄 ftplib: FTP protocol client (requires sockets).
+📄 html: Helpers for manipulating HTML.
+📄 html.entities: Definitions of HTML general entities.
+📄 html.parser: A simple parser that can handle HTML and XHTM
+📄 http: HTTP status codes and messages
+📄 http.client: HTTP and HTTPS protocol client (requires sockets).
+📄 http.cookiejar: Classes for automatic handling of HTTP cookies.
+📄 http.cookies: Support for HTTP state management (cookies).
+📄 http.server: HTTP server and request handlers. : 
+📄 imaplib: IMAP4 protocol client (requires sockets).
+📄 ipaddress: IPv4/IPv6 manipulation library.
+📄 mailbox: Manipulate mailboxes in various formats
+📄 poplib: POP3 protocol client (requires sockets).
+📄 site: Module responsible for site-specific configuration.
+📄 sitecustomize: 
+📄 smtplib: SMTP protocol client (requires sockets).
+📄 socket: Low-level networking interface.
+📄 socketserver: A framework for network servers.
+📄 ssl: TLS/SSL wrapper for socket objects
+📄 urllib: 
+📄 urllib.error: Exception classes raised by urllib.request.
+📄 urllib.parse: Parse URLs into or assemble them from components.
+📄 urllib.request: Extensible library for opening URLs.
+📄 urllib.response: Response classes used by urllib.
+📄 urllib.robotparser: Load a robots.txt file and answer questions about fetchability of other URLs.
+📄 wsgiref: WSGI Utilities and Reference Implementation.
+📄 wsgiref.handlers: WSGI server/gateway base classes.
+📄 wsgiref.headers: WSGI response header tools.
+📄 wsgiref.simple_server: A simple WSGI HTTP server.
+📄 wsgiref.types: WSGI types for static type checking
+📄 wsgiref.util: WSGI environment utilities.
+📄 wsgiref.validate: WSGI conformance checker.
+📄 xml: Package containing XML processing modules
+📄 xml.dom: Document Object Model API for Python.
+📄 xml.dom.minidom: Minimal Document Object Model (DOM) implementation.
+📄 xml.dom.pulldom: Support for building partial DOM trees from SAX events.
+📄 xml.etree.ElementInclude: 
+📄 xml.etree.ElementTree: Implementation of the ElementTree API.
+📄 xml.parsers.expat: An interface to the Expat non-validating XML parser.
+📄 xml.parsers.expat.errors: 
+📄 xml.parsers.expat.model: 
+📄 xml.sax: Package containing SAX2 base classes and convenience functions.
+📄 xml.sax.handler: Base classes for SAX event handlers.
+📄 xml.sax.saxutils: Convenience functions and classes for use with SAX.
+📄 xml.sax.xmlreader: Interface which SAX-compliant XML parsers must implement.
+📄 xmlrpc: 
+📄 xmlrpc.client: XML-RPC client access.
+📄 xmlrpc.server: Basic XML-RPC server implementations.
+⚫Basic:
+➤📚 The Python Standard Library
+📄 ensurepip: Bootstrapping the "pip" installer into an existing Python installation or virtual environment.
+📄 __future__: Future statement definitions
+📄 code: Facilities to implement read-eval-print loops.
+📄 codeop: Compile (possibly incomplete) Python code.
+📄 compileall: Tools for byte-compiling all Python source files in a directory tree.
+📄 contextlib: Utilities for with-statement contexts.
+📄 contextvars: Context Variables
+📄 copyreg: Register pickle support functions.
+📄 cProfile:
+📄 importlib: The implementation of the import machinery.
+📄 importlib.abc: Abstract base classes related to import
+📄 importlib.machinery: Importers and path hooks
+📄 importlib.metadata: Accessing package metadata
+📄 importlib.resources: Package resource reading, opening, and access
+📄 keyword: Test whether a string is a keyword in Python.
+📄 lib2to3: The 2to3 library
+📄 locale: Internationalization services.
+📄 logging: Flexible event logging system for applications.
+📄 logging.config: Configuration of the logging module.
+📄 logging.handlers: Handlers for the logging module.
+📄 lzma: A Python wrapper for the liblzma compression library.
+📄 modulefinder: Find modules used by a script.
+📄 pdb: The Python debugger for interactive interpreters.
+📄 pickletools: Contains extensive comments about the pickle protocols and pickle-machine opcodes.
+📄 pkgutil: Utilities for the import system.
+📄 platform: Retrieves as much platform identifying data as possible.
+📄 pprint: Data pretty printer.
+📄 profile: Python source profiler.
+📄 pstats: Statistics object for use with the profiler.
+📄 pyclbr: Supports information extraction for a Python module browser.
+📄 pydoc: Documentation generator and online help system.
+📄 rlcompleter: Python identifier completion, suitable for the GNU readline library.
+📄 runpy: Locate and run Python modules without importing them first.: 
+📄 sched: General purpose event scheduler.
+📄 sysconfig: Python's configuration information
+📄 test: Regression tests package containing the testing suite for Python.
+📄 test.support: Support for Python's regression test suite.
+📄 tokenize: Lexical scanner for Python source code.
+📄 trace: Trace or track Python statement execution.
+📄 traceback: Print or retrieve a stack traceback.
+📄 tracemalloc: Trace memory allocations.
+📄 usercustomize: 
+⚫Interface:
+📄 hashlib: Secure hash and message digest algorithms.
+📄 __main__: The environment where top-level code is run. Covers command-line interfaces, import-time behavior, and ``__name__ == '__main__'``.
+📄 argparse: Command-line option and argument parsing library.   
+📄 builtins: The module that provides the built-in namespace.
+📄 cmd: Build line-oriented command interpreters.
+📄 configparser: Configuration file parser.
+📄 copy: Shallow and deep copy operations.
+➤📄 curses.textpad: Emacs-like input editing in a curses window. :    
+📄 getopt: Portable parser for command line options; support both short and long option names.
+📄 getpass: Portable reading of passwords and retrieval of the userid.
+📄 gettext: Multilingual internationalization services.  
+📄 hmac: Keyed-Hashing for Message Authentication (HMAC) implementation
+📄 idlelib: Implementation package for the IDLE shell/editor.
+📄 select: Wait for I/O completion on multiple streams.
+📄 selectors: High-level I/O multiplexing.
+📄 symtable: Interface to the compiler's internal symbol tables.
+📄 uuid: UUID objects (universally unique identifiers) according to RFC 4122
+📄 venv: Creation of virtual environments.
+➤Virtual environment: $ pip install virtualenv
+⚫Debug:
+➤📚Pytest
+➤📚iPython interactive Python interpreter   
+📄 atexit: Register and execute cleanup functions.
+📄 bdb: Debugger framework.
+📄 doctest: Test pieces of code within docstrings.
+📄 faulthandler: Dump the Python traceback.
+📄 gc: Interface to the cycle-detecting garbage collector.
+➤📄 timeit: Measure the execution time of small code snippets.
+📄 unittest: Unit testing framework for Python.
+📄 unittest.mock: Mock object library. 
+📄 warnings: Issue warning messages and control their disposition.
+⚫Encoding:
+📄 base64: RFC 4648: Base16, Base32, Base64 Data Encodings; Base85 and Ascii85
+📄 binascii: Tools for converting between binary and various ASCII-encoded binary representations.
+📄 bz2: Interfaces for bzip2 compression and decompression.
+📄 codecs: Encode and decode data and streams.
+📄 curses.ascii: Constants and set-membership functions for ASCII characters.
+📄 dis: Disassembler for Python bytecode.
+📄 errno: Standard errno system symbols.
+➤📄 json: Encode and decode the JSON format.
+➤📄 json.tool: A command line to validate and pretty-print JSON.: 
+📄 token: Constants representing terminal nodes of the parse tree.
+⚫Threading:     
+➤📄 threading: Thread-based parallelism.
+📄 subprocess: Subprocess management.
+➤📄 _thread: Low-level threading API.
+➤📄 asyncio: Asynchronous I/O.
+➤📄 concurrent.futures: Execute computations concurrently using threads or processes.
+📄 multiprocessing: Process-based parallelism.
+📄 multiprocessing.connection: API for dealing with sockets.
+📄 multiprocessing.dummy: Dumb wrapper around threading.
+📄 multiprocessing.managers: Share data between process with shared objects.
+📄 multiprocessing.pool: Create pools of processes. : 
+📄 signal: Set handlers for asynchronous events.
+⚫Classes and Objects:
+📄 abc: Abstract base classes according to :pep:`3119`.
+➤📄 itertools: Functions creating iterators for efficient looping.
+➤📄 functools: Higher-order functions and operations on callable objects.: 
+📄 difflib: Helpers for computing differences between objects.
+📄 marshal: Convert Python objects to streams of bytes and back (with different constraints).
+📄 pickle: Convert Python objects to streams of bytes and back.
+📄 reprlib: Alternate repr() implementation with size limits. 
+➤📄 shelve: Python object persistence.
+⚫Basic datatypes:       
+📄 types: Names for built-in types.
+📄 typing: Support for type hints (see :pep:`484`).
+➤📄 numbers: Numeric abstract base classes (Complex, Real, Integral, etc.).
+➤📄 string: Common string operations.
+📄 stringprep: String preparation, as per RFC 3453
+📄 textwrap: Text wrapping and filling
+📄 weakref: Support for weak references and weak dictionaries.
+⚫DataStructure:
+📄 ctypes: A foreign function library for Python. 
+📄 inspect: Extract information and source code from live objects.
+📄 io: Core tools for working with streams.
+➤📄 calendar: Functions for working with calendars, including some emulation of the Unix cal program.
+➤📄 datetime: Basic date and time types.
+➤📄 time: Time access and conversions.
+➤📄 zoneinfo: IANA time zone support
+➤📄 array: Space efficient arrays of uniformly typed numeric values.
+➤📄 ast: Abstract Syntax Tree classes and manipulation.
+➤📄 bisect: Array bisection algorithms for binary searching. 
+➤📄 collections: Container datatypes.  
+📄 collections.abc: Abstract base classes for containers.
+➤📄 dataclasses: Generate special methods on user-defined classes.
+➤📄 enum: Implementation of an enumeration class.  
+➤📄 graphlib: Functionality to operate with graph-like structures
+➤📄 heapq: Heap queue algorithm (a.k.a. priority queue).
+➤📄 queue: A synchronized queue class.
+📄 struct: Interpret bytes as packed binary data.
+Math:
+➤📚NumPy  high-level mathematical functions 
+➤📚Pandas DS
+➤📚Scipy  scientific computing
+➤📚SymPy symbolic mathematics
+➤📚num-dual
+📄 operator: Functions corresponding to the standard operators.
+📄 cmath: Mathematical functions for complex numbers.
+➤📄 decimal: Implementation of the General Decimal Arithmetic Specification.
+➤📄 fractions: Rational numbers.
+➤📄 math: Mathematical functions (sin() etc.).
+➤📄 random: Generate pseudo-random numbers with various common distributions.
+📄 secrets: Generate secure random numbers for managing secrets.
+➤📄 statistics: Mathematical statistics functions
+⚫Files:
+📄 csv: Write and read tabular data to and from delimited files.
+📄 filecmp: Compare files efficiently.
+📄 fileinput: Loop over standard input or a list of files.
+📄 gzip: Interfaces for gzip compression and decompression using file objects.: 
+📄 linecache: Provides random access to individual lines from text files.
+📄 netrc: Loading of .netrc files.
+📄 plistlib: Generate and parse Apple plist files.
+📄 py_compile: Generate byte-code files from Python source files.
+📄 quopri: Encode and decode files using the MIME quoted-printable encoding.
+📄 tabnanny: Tool for detecting white space related problems in Python source files in a directory tree.
+📄 tarfile: Read and write tar-format archive files.
+📄 tempfile: Generate temporary files and directories.
+📄 tomllib: Parse TOML files.
+📄 zipfile: Read and write ZIP-format archive files.
+📄 mimetypes: Mapping of filename extensions to MIME types.
+📄 os: Miscellaneous operating system interfaces.
+📄 os.path: Operations on pathnames.
+📄 stat: Utilities for interpreting the results of os.stat(), os.lstat() and os.fstat().
+📄 pathlib: Object-oriented filesystem paths
+📄 shutil: High-level file operations, including copying.
+📄 sndhdr: Determine type of a sound file.
+📄 sys: Access system-specific parameters and functions.
+📄 sys.monitoring: Access and control event monitoring
+📄 zipapp: Manage executable Python zip archives
+📄 zipimport: Support for importing Python modules from ZIP archives.
+📄 zlib: Low-level interface to compression and decompression routines compatible with gzip.
+⚫Sound:
+📄 wave: Provide an interface to the WAV sound format.     
+📚PySoundFile: A library for reading and writing audio files in a variety of formats.
+📚Librosa: A library for music analysis and processing.
+📚MuseNet: A library for generating music using deep learning.
+📚Pyo: A library for real-time audio synthesis and processing.
+📚Midifile: A library for reading and writing MIDI files.      
+⚫Color:
+📄 colorsys: Conversion functions between RGB and other color systems.
+⚫REGEX:
+➤📄 re: Regular expression operations.
+⚫DB:
+➤📚SQLAlchemy
+📄 sqlite3: A DB-API 2.0 implementation using SQLite 3.x.
+📄 unicodedata: Access the Unicode Database.
+⚫Graphics
+📄 turtle: An educational framework for simple graphics applications
+📄 turtledemo: A viewer for example turtle scripts
+⚫📚Python machine learning: 
+➤TensorFlow
+➤scikit-learn. 
+➤📚Data Science:
+➤Matplotlib dimensional plotting
+➤Seaborn visualization
+➤Plotly
+➤Scikit-learn  ML(NumPy SciPy)
+-Pipenv working environment
+-TensorFlow DL
+-Apache Spark
+-Keras neural netw
+-NLTK NLP
+⚫📚Chemistry:
+-Chempy: For molecular modeling and cheminformatics
+-Open Babel: For support for a variety of molecular file formats
+⚫📚IoT:
+-Paho-MQTT: A client library for the MQTT messaging protocol, which is widely used in IoT applications.
+-Azure IoT SDK for Python: A client library for the Azure IoT Hub service.
+-Google Cloud IoT Core Python Client Library: A client library for the Google Cloud IoT Core service.
+-AWS IoT Core Python SDK: A client library for the AWS IoT Core service.
+-Adafruit CircuitPython: A collection of libraries for working with Adafruit hardware, such as microcontrollers and sensors

@@ -1,0 +1,320 @@
+https://peps.python.org/pep-0008/
+👉Use autopep8
+
+➤Maximum Line Length of 79 characters avoiding a backslash for line continuation.
+#______________________________________________________________________________
+#_______________________________________________________________________
+    72 characters For flowing long blocks of text with fewer structural restrictions (docstrings or comments)
+
+Lines Break Before Binary Operators
+# easy to match operators with operands
+income = (gross_wages
+          + taxable_interest
+          + (dividends - qualified_dividends)
+          - ira_deduction
+          - student_loan_interest)
+
+➤Blank Lines
+Surround top-level function and class definitions with two blank lines.
+Method definitions inside a class are surrounded by a single blank line.
+
+➤Compound statements (multiple statements on the same line) are generally discouraged:
+# Correct:
+if foo == 'blah':
+    do_blah_thing()
+do_one()
+do_two()
+do_three()
+
+➤Indentation
+    Use 4 spaces per indentation level No tabs!!
+
+# An extra level of indentation distinguishes arguments.
+def long_function_name(
+        var_one, var_two, var_three,
+        var_four):
+    print(var_one)
+
+# Hanging indents should add a level.
+foo = long_function_name(
+    var_one, var_two,
+    var_three, var_four)
+
+# Add some extra indentation on the conditional continuation line.
+if (this_is_one_thing
+        and that_is_another_thing):
+    do_something()
+
+➤closing
+The closing brace/bracket/parenthesis on multiline constructs may either line up under the first non-whitespace character of the last line of list, as in:
+
+my_list = [
+    1, 2, 3,
+    4, 5, 6,
+    ]
+result = some_function_that_takes_arguments(
+    'a', 'b', 'c',
+    'd', 'e', 'f',
+    )
+
+➤Source File Encoding
+Use non-ASCII characters sparingly, preferably only to denote places and human names.
+All identifiers in the Python standard library MUST use ASCII-only identifiers, and SHOULD use English words wherever feasible.
+
+➤Imports
+Wildcard imports (from <module> import *) should be avoided
+
+# Correct:
+import os
+import sys
+
+# Wrong:
+import sys, os
+
+# Correct:
+from subprocess import Popen, PIPE
+
+You should put a blank line between each group of imports.
+Standard library imports.
+Related third party imports.
+Local application/library specific imports.
+
+Importing a class from a class-containing module
+from myclass import MyClass
+from foo.bar.yourclass import YourClass
+
+➤Module Level __Dunder Names__ 
+
+"""This is the example module.
+
+This module does stuff.
+"""
+
+from __future__ import barry_as_FLUFL
+
+__all__ = ['a', 'b', 'c']
+__version__ = '0.1'
+__author__ = 'Cardinal Biggles'
+
+import os
+import sys
+
+➤String Quotes
+Go with "double strings quotes" and use 'simple ones' when necessary
+"""docstrings"""
+
+➤Whitespaces to avoid in Expressions and Statements
+# Immediately inside parentheses, brackets or braces:
+spam(ham[1], {eggs: 2})
+
+# Between a trailing comma and a following close parenthesis: 
+foo = (0,)
+
+# Immediately before a comma, semicolon, a not slicing colon or a finction annotation arrow:
+if x == 4: print(x, y); x, y = y, x
+def munge(input: AnyStr): ...
+def munge() -> PosInt: ...
+
+# Correct:
+ham[1:9], ham[1:9:3], ham[:9:3], ham[1::3], ham[1:9:]
+ham[lower:upper], ham[lower:upper:], ham[lower::step]
+ham[lower+offset : upper+offset]
+ham[: upper_fn(x) : step_fn(x)], ham[:: step_fn(x)]
+ham[lower + offset : upper + offset]
+
+# Immediately before the open args/indexing/slicing parenthesis
+spam(1)
+dct['key'] = lst[index]
+
+# More than one space around an assignment (or other) operator to align it with another:
+x = 1
+y = 2
+long_variable = 3
+
+# Wrong:
+x             = 1
+y             = 2
+long_variable = 3
+
+# Don’t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter unless an argument annotation combines with a default value:
+def complex(real, imag=0.0):
+    return magic(r=real, i=imag)
+
+def munge(sep: AnyStr = None): ...
+def munge(input: AnyStr, sep: AnyStr = None, limit=1000): ...
+
+# Avoid trailing whitespace anywhere
+# Always surround these binary operators with a single space on either side: 
+    assignments (=, +=, -=, *=, /=, %=), 
+    comparisons (==, <, >, !=, <=, >=, in, not in, is, is not), 
+    Booleans (and, or, not).
+
+# Never use more than one space, and always have the same amount of whitespace on both sides of a binary operator:
+i = i + 1
+submitted += 1
+x = x*2 - 1
+hypot2 = x*x + y*y
+c = (a+b) * (a-b)
+
+➤Trailing Commas
+# For single element tuples (with redundant paretheses)
+FILES = ('setup.cfg',)
+
+# Each value on a line by itself adds a trailing comma
+FILES = [
+    'setup.cfg',
+    'tox.ini',
+    ]
+initialize(FILES,
+           error=True,
+           )
+
+➤Comments
+
+use them sparingly, specially inline comments.
+Comments MUST be up-to-date and NOT contradict the code
+Comments should be complete sentences. 
+The first word should be capitalized, unless it is an identifier starting by a lower case letter
+Block comments generally consist of one or more paragraphs built out of complete sentences, with each sentence ending in a period.
+
+You should use one or two spaces after a sentence-ending period in multi-sentence comments, except after the final sentence. !!!
+
+      #########
+      # 
+      # Block Comment
+      #
+      ########
+      Some Code  # Inline Comment{ 2 sp + # + sp 
+
+➤Documentation Strings
+Write docstrings for all public modules, functions, classes, and methods. Docstrings are not necessary for non-public methods, but you should have a comment that describes what the method does. This comment should appear after the def line.
+The """ that ends a multiline docstring should be on a line by itself.
+
+"""Return a foobang
+
+Optional plotz says to frobnicate the bizbaz first.
+"""
+
+⚫Naming Conventions__
+Prioritize internal consistency
+Names that are visible to the user as public parts of the API should follow conventions that reflect usage rather than implementation.
+
+_single_leading_underscore: weak “internal use” indicator. E.g. from M import * does not import objects whose names start with an underscore.
+single_trailing_underscore_: used by convention to avoid conflicts with Python keyword.
+__double_leading_underscore: when naming a class attribute, invokes name mangling (inside class FooBar, __boo becomes _FooBar__boo; see below).
+__double_leading_and_trailing_underscore__: “magic” objects or attributes that live in user-controlled namespaces. E.g. __init__, __import__ or __file__. Never invent such names; only use them as documented.
+
+Avoid these names: 'I', 'O', 'l' and use 'L' instead if necessary
+
+Modules should have short, all-lowercase snake_case names. 
+Python packages should also have short, all-lowercase names, without underscores.
+C/C++ extension modules accompained by a Python module have a leading underscore.
+
+Exceptions, ClassNames and TypeVariables in PascalCase
+LowerThanZeroError
+from typing import TypeVar
+
+VT_co = TypeVar('VT_co', covariant=True)
+KT_contra = TypeVar('KT_contra', contravariant=True)
+
+function and variable_names go in snake_case (camelCase in threading.py)
+
+Function and Method Arguments
+    Always use self for the first argument to instance methods.
+    Always use cls for the first argument to class methods.
+
+method_names and instance_variables in snake_case
+_non_public_methods _non_public_instance_variables
+__pythons_name_mangling_rules
+
+CONSTANTS_ALL_IN_CAPS
+
+Avoid using properties for computationally expensive operations; the attribute notation makes the caller believe that access is (relatively) cheap.
+
+If your class is intended to be subclassed, and you have attributes that you do not want subclasses to use, consider naming them with double leading underscores and no trailing underscores. This invokes Python’s name mangling algorithm, where the name of the class is mangled into the attribute name. This helps avoid attribute name collisions should subclasses inadvertently contain attributes with the same name.
+
+To better support introspection, modules should explicitly declare the names in their public API using the __all__ attribute. Setting __all__ to an empty list indicates that the module has no public API.
+
+➤Programming Recommendations
+
+Comparisons to singletons like None should always be done with is or is not, never the equality operators.
+
+# Correct:
+if foo is not None:
+# Wrong:
+if not foo is None:
+
+When implementing ordering operations with rich comparisons, it is best to implement all six operations (__eq__, __ne__, __lt__, __le__, __gt__, __ge__) rather than relying on other code to only exercise a particular comparison.
+
+To minimize the effort involved, the functools.total_ordering() decorator provides a tool to generate missing comparison methods.
+
+!!!!!!!!!!!!!!!!
+# Correct:
+def f(x): return 2*x
+# Wrong:
+f = lambda x: 2*x
+
+# Correct:
+try:
+    value = collection[key]
+except KeyError:
+    return key_not_found(key)
+else:
+    return handle_value(value)
+# Wrong:
+try:
+    # Too broad!
+    return handle_value(collection[key])
+except KeyError:
+    # Will also catch KeyError raised by handle_value()
+    return key_not_found(key)
+
+# Correct:
+with conn.begin_transaction():
+    do_stuff_in_transaction(conn)
+# Wrong:
+with conn:
+    do_stuff_in_transaction(conn)
+
+# Be consistent in return statements:
+
+def foo(x):
+    if x >= 0:
+        return math.sqrt(x)
+    else:
+        return None
+
+def bar(x):
+    if x < 0:
+        return None
+    return math.sqrt(x)
+
+Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes.
+# Correct:
+if foo.startswith('bar'):
+# Wrong:
+if foo[:3] == 'bar':
+
+# Correct:
+if isinstance(obj, int):
+# Wrong:
+if type(obj) is type(1):
+
+# Correct:
+if not seq:
+if seq:
+# Wrong:
+if len(seq):
+if not len(seq):
+
+# Correct:
+if my_bool:
+# Wrong:
+if my_bool == True:
+
+# Wrong:
+def foo():
+    try:
+        1 / 0
+    finally:
+        return 42
